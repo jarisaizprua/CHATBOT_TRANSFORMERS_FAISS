@@ -1,6 +1,6 @@
-## Proyecto de Chatbot utilizando modelos transformadores y FAISS (Facebook AI Similarity Search)
+## Proyecto de Chatbot utilizando modelos Transformers y FAISS (Facebook AI Similarity Search)
 
-Los modelos transformadores son una clase de redes neuronales que son especialmente efectivas para el procesamiento del lenguaje natural (PNL); estos modelos pueden aprender patrones complejos en el lenguaje y usarlos para generar respuestas precisas.
+Los modelos Transformers son una clase de redes neuronales que son especialmente efectivas para el procesamiento del lenguaje natural (PNL); estos modelos pueden aprender patrones complejos en el lenguaje y usarlos para generar respuestas precisas.
 
 FAISS es una biblioteca de búsqueda de similitud de vectores de Facebook AI; permite la indexación y la búsqueda rápida de grandes conjuntos de vectores, lo que es esencial para la recuperación de respuestas eficiente.
 
