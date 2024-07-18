@@ -55,13 +55,12 @@ faiss_index = faiss.IndexFlatL2(question_embeddings.shape[1])
 faiss_index.add(question_embeddings)
 
 # Umbral de distancia para considerar una respuesta como válida
-DISTANCE_THRESHOLD = 11
+DISTANCE_THRESHOLD = 11 # Ajustar según los resultados de similitud
 
 # Función para encontrar la respuesta más similar
 def find_best_answer(query):
     query_embedding = encode_questions([query])
     D, I = faiss_index.search(query_embedding, k=1)
-    print(D[0][0])
     if D[0][0] > DISTANCE_THRESHOLD:
         return "No entiendo la pregunta, por favor vuelve a intentar"
     return answers[I[0][0]]
